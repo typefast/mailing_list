@@ -8,6 +8,10 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+# Use Gibbon 1.x if you need to target API 2.0.
+gem 'gibbon'
+# background queuing tasks
+gem 'sucker_punch'
 group :development, :test do
   gem 'byebug'
 end
