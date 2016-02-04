@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'gibbon'
 # background queuing tasks
 gem 'sucker_punch'
+# figaro environment variables
+gem 'figaro'
 group :development, :test do
   gem 'byebug'
 end
