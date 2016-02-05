@@ -14,5 +14,8 @@ class Visitor < ActiveRecord::Base
     })
     Rails.logger.info("subscribed #{self.email} to MailChimp") if result
     
+    rescue Gibbon::MailChimpError => e
+      Rails.logger.info("MailChimp subscribe failed for #{self.email}: " + e.message)  
+    
   end
 end
